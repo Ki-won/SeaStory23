@@ -54,7 +54,7 @@ namespace SeaStory.ui
         {
             var clientWrapper = await ClientWrapper.Instance;
             await clientWrapper.ForceDeactivateUserAsync(userId, int.Parse(seat));
-            await clientWrapper.CloseAsync();
+            // await clientWrapper.CloseAsync();
 
             MessageBox.Show("강제 종료되었습니다");
         }

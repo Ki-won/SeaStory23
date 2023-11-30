@@ -33,7 +33,7 @@ namespace SeaStory.UI.AdminFoodManagement
             bool trigger = true; // trigger를 true로 초기화
             do
             {
-                
+
                 // 3. PW_Box.text = null 체크
                 if (string.IsNullOrWhiteSpace(PW_Box.Text))
                 {
@@ -75,7 +75,7 @@ namespace SeaStory.UI.AdminFoodManagement
                 // 폼 종료
                 this.Close();
             }
-            
+
         }
         //닫기 버튼 클릭 시
         private void button3_Click(object sender, EventArgs e)

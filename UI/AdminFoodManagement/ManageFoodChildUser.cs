@@ -47,7 +47,7 @@ namespace SeaStory.UI.AdminFoodManagement
             this.Close();
         }
 
-        private void GetInfoButton_Click(object sender, EventArgs e)
+        private void MakePayment_Click(object sender, EventArgs e)
         {
             var selectedItems = new List<MenuItemWithCheckboxControl>();
             decimal totalPrice = 0m;
@@ -63,31 +63,28 @@ namespace SeaStory.UI.AdminFoodManagement
                 }
             }
 
-            Console.WriteLine("Selected items:");
-            foreach (var item in selectedItems)
+            if (selectedItems.Any())
             {
-                Console.WriteLine($"Name: {item.FoodName}, Price: {item.FoodPrice}");
+                UserInterFacePayment userInterFacePayment = new UserInterFacePayment(SeatID);
+                userInterFacePayment.SetPrice((int)totalPrice);
+                userInterFacePayment.ShowDialog();
+
+                // 결제 폼에서의 결과 확인
+                int paymentResult = userInterFacePayment.PaymentResult;
+                if (paymentResult == 1)
+                {
+                    foreach (var item in selectedItems)
+                    {
+                        DatabaseAut.AddOrder(item.FoodName, SeatID);
+                    }
+                }
+                this.Close();
             }
 
-            Console.WriteLine($"Total Price: {totalPrice}");
-
-            // SeatID 변수를 사용하여 주문 정보를 DB에 저장
-            foreach (var item in selectedItems)
+            else
             {
-                //DatabaseAut.AddOrder(DatabaseAut.GetFoodCode(item.FoodName), SeatID); // SeatID 변수 사용
-                DatabaseAut.AddOrder(item.FoodName, SeatID); // SeatID 변수 사용
+                MessageBox.Show("선택된 항목이 없습니다.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            /*
-            // Payment Form 열기 (필요에 따라 주석 처리하세요)
-            using (UserInterFacePayment payment = new UserInterFacePayment())
-            {
-                payment.SetPrice((int)totalPrice);
-                payment.ShowDialog();
-            }
-            */
-            UserInterFacePayment userInterFacePayment = new UserInterFacePayment(SeatID);
-            userInterFacePayment.ShowDialog();
-            this.Close();
         }
     }
 }

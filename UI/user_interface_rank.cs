@@ -20,7 +20,7 @@ namespace SeaStory.UI
             list_Update();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonRefresh(object sender, EventArgs e)
         {
             //유저 랭킹 리스트 형태로 받아오는 함수 필요
             list_Update();
@@ -38,8 +38,8 @@ namespace SeaStory.UI
             // listView1에 랭킹 목록 추가
             foreach (User2 userss in users)
             {
-                if(!(userss.ID == "admin"))
-                { 
+                if (!(userss.ID == "admin"))
+                {
                     ListViewItem item = new ListViewItem(userss.ID);
                     item.SubItems.Add(userss.Name);
                     item.SubItems.Add(userss.UsedTime.ToString());
@@ -47,6 +47,5 @@ namespace SeaStory.UI
                 }
             }
         }
-
     }
 }

@@ -46,12 +46,12 @@ namespace SeaStory.UI
         }
 
         //새로고침 버튼 클릭 시
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonRefreshClick(object sender, EventArgs e)
         {
             list_Update();
         }
         //닫기 버튼 클릭 시
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonCloseClick(object sender, EventArgs e)
         {
             this.Close();
         }

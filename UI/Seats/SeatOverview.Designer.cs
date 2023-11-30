@@ -37,13 +37,16 @@
             seatPanel1.Name = "seatPanel1";
             seatPanel1.Size = new System.Drawing.Size(620, 383);
             seatPanel1.TabIndex = 0;
+            seatPanel1.Load += seatPanel1_Load;
             // 
             // SeatOverview
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             ClientSize = new System.Drawing.Size(800, 450);
             Controls.Add(seatPanel1);
+            DoubleBuffered = true;
             Name = "SeatOverview";
             Text = "SeatOverview";
             ResumeLayout(false);

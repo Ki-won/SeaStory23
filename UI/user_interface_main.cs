@@ -170,13 +170,13 @@ namespace SeaStory
         }
 
         //요리 주문 버튼 클릭 시
-        private void button10_Click(object sender, EventArgs e)
+        private void buttonOrderFood(object sender, EventArgs e)
         {
             ManageFoodChildUser manageFoodChildUser = new ManageFoodChildUser(seatNumber);
             manageFoodChildUser.ShowDialog();
         }
         //사용 종료 버튼 클릭 시
-        private async void button11_Click(object sender, EventArgs e)
+        private async void buttonLogOut(object sender, EventArgs e)
         {
             DatabaseAut.DeleteOrder(seatNumber);
             login login = new login();
@@ -188,8 +188,8 @@ namespace SeaStory
         }
         private void LogoutCommandHandler()
         {
-            // Call button11_Click or directly the logic inside it
-            button11_Click(this, EventArgs.Empty);
+            // Call buttonLogOut or directly the logic inside it
+            buttonLogOut(this, EventArgs.Empty);
         }
 
 
@@ -213,14 +213,14 @@ namespace SeaStory
         }
 
         //랭킹 보기 버튼 클릭 시
-        private void button7_Click(object sender, EventArgs e)
+        private void buttonViewRankings(object sender, EventArgs e)
         {
             user_interface_rank user_Interface_Rank = new user_interface_rank();
             user_Interface_Rank.ShowDialog();
         }
 
         //주문 목록 버튼 클릭 시
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonViewOrderList(object sender, EventArgs e)
         {
             User_Order_list_form user_Order_list_Form = new User_Order_list_form(seatNumber);
             user_Order_list_Form.ShowDialog();

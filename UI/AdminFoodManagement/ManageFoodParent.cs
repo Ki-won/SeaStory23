@@ -58,5 +58,9 @@ namespace SeaStory.UI.AdminFoodManagement
 
         }
 
+        private void ManageFoodParent_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

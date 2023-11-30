@@ -107,5 +107,9 @@ namespace SeaStory.UI.Seats
             }
         }
 
+        private void labelSeatNum_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace SeaStory.UI.Seats
         {
             InitializeComponent();
         }
+
+        private void seatPanel1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

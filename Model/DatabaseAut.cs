@@ -459,7 +459,7 @@ namespace SeaStory.Model
 
                 insertCmd.ExecuteNonQuery();
 
-                MessageBox.Show($"주문성공했습니다.\nFood Code: {foodCode}\nOrder Seat: {orderSeat}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+              
             }
             catch (Exception ex)
             {

@@ -67,10 +67,10 @@ namespace SeaStory.UI.AdminFoodManagement
 
 
             FileUploader uploader = new FileUploader();
-            Uri serverUri = new Uri("http://15.165.43.43:15000/upload");
+            Uri serverUri = new Uri("http://webp.flykorea.kr:55000/upload");
             await uploader.UploadFileAsync(selectedImagePath, serverUri);
 
-            DatabaseAut.AddFood(FoodName, (int)FoodPrice, "http://15.165.43.43//" + Path.GetFileName(selectedImagePath));
+            DatabaseAut.AddFood(FoodName, (int)FoodPrice, @"http://webp.flykorea.kr/~story/" + Path.GetFileName(selectedImagePath));
             this.Close();
         }
 

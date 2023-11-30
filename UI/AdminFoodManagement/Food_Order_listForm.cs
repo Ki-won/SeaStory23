@@ -17,11 +17,11 @@ namespace SeaStory.UI.AdminFoodManagement
         public Food_Order_listForm()
         {
             InitializeComponent();
-            
+
             list_Update();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonRemoveOrder(object sender, EventArgs e)
         {
             //listview1에서 선택된 주문을 삭제하는 기능
             if (listView1.SelectedItems.Count > 0)
@@ -38,7 +38,7 @@ namespace SeaStory.UI.AdminFoodManagement
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonRefresh(object sender, EventArgs e)
         {
             //주문 목록을 새로 받아오는 버튼
             list_Update();

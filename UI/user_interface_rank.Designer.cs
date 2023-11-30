@@ -36,15 +36,16 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Malgun Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label1.Location = new System.Drawing.Point(37, 32);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(71, 15);
+            label1.Size = new System.Drawing.Size(119, 28);
             label1.TabIndex = 0;
             label1.Text = "사용량 랭킹";
             // 
             // listView1
             // 
-            listView1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            listView1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             listView1.FullRowSelect = true;
             listView1.GridLines = true;
             listView1.Location = new System.Drawing.Point(37, 78);
@@ -62,7 +63,7 @@
             button2.TabIndex = 4;
             button2.Text = "새로고침";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2.Click += buttonRefresh;
             // 
             // user_interface_rank
             // 

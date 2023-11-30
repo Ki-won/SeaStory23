@@ -77,6 +77,7 @@
             // 
             // btnOK
             // 
+            //btnOK.Image = Properties.Resources.Button_PNG_Free_Download;
             btnOK.Location = new System.Drawing.Point(360, 287);
             btnOK.Name = "btnOK";
             btnOK.Size = new System.Drawing.Size(75, 23);
@@ -126,6 +127,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             ClientSize = new System.Drawing.Size(575, 337);
             Controls.Add(label1);
             Controls.Add(numericUpDownFoodPrice);

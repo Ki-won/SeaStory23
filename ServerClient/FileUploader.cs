@@ -41,7 +41,7 @@ namespace SeaStory.ServerClient
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Exception in file upload: " + ex.Message);
+                Console.WriteLine("Exception in file upload: " + ex.Message);
             }
         }
 

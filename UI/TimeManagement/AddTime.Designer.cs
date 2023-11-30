@@ -42,26 +42,26 @@
             // 
             // textBoxName
             // 
-            textBoxName.Location = new System.Drawing.Point(418, 146);
+            textBoxName.Location = new System.Drawing.Point(178, 83);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new System.Drawing.Size(100, 23);
+            textBoxName.Size = new System.Drawing.Size(120, 23);
             textBoxName.TabIndex = 2;
             // 
             // labelTime
             // 
             labelTime.AutoSize = true;
-            labelTime.Location = new System.Drawing.Point(274, 102);
+            labelTime.Location = new System.Drawing.Point(86, 39);
             labelTime.Name = "labelTime";
-            labelTime.Size = new System.Drawing.Size(59, 15);
+            labelTime.Size = new System.Drawing.Size(58, 15);
             labelTime.TabIndex = 3;
             labelTime.Text = "추가 시간";
             // 
             // labelMemberPrice
             // 
             labelMemberPrice.AutoSize = true;
-            labelMemberPrice.Location = new System.Drawing.Point(274, 198);
+            labelMemberPrice.Location = new System.Drawing.Point(86, 135);
             labelMemberPrice.Name = "labelMemberPrice";
-            labelMemberPrice.Size = new System.Drawing.Size(59, 15);
+            labelMemberPrice.Size = new System.Drawing.Size(58, 15);
             labelMemberPrice.TabIndex = 4;
             labelMemberPrice.Text = "회원 요금";
             labelMemberPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -69,15 +69,15 @@
             // labelName
             // 
             labelName.AutoSize = true;
-            labelName.Location = new System.Drawing.Point(274, 149);
+            labelName.Location = new System.Drawing.Point(86, 86);
             labelName.Name = "labelName";
-            labelName.Size = new System.Drawing.Size(59, 15);
+            labelName.Size = new System.Drawing.Size(58, 15);
             labelName.TabIndex = 5;
             labelName.Text = "요금제 명";
             // 
             // buttonAddTime
             // 
-            buttonAddTime.Location = new System.Drawing.Point(293, 370);
+            buttonAddTime.Location = new System.Drawing.Point(86, 203);
             buttonAddTime.Name = "buttonAddTime";
             buttonAddTime.Size = new System.Drawing.Size(75, 23);
             buttonAddTime.TabIndex = 6;
@@ -87,7 +87,7 @@
             // 
             // buttonCancel
             // 
-            buttonCancel.Location = new System.Drawing.Point(443, 370);
+            buttonCancel.Location = new System.Drawing.Point(192, 203);
             buttonCancel.Name = "buttonCancel";
             buttonCancel.Size = new System.Drawing.Size(75, 23);
             buttonCancel.TabIndex = 7;
@@ -97,7 +97,7 @@
             // 
             // numericUpDownTime
             // 
-            numericUpDownTime.Location = new System.Drawing.Point(418, 94);
+            numericUpDownTime.Location = new System.Drawing.Point(178, 31);
             numericUpDownTime.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             numericUpDownTime.Name = "numericUpDownTime";
             numericUpDownTime.Size = new System.Drawing.Size(120, 23);
@@ -105,18 +105,17 @@
             // 
             // numericUpDownPrice
             // 
-            numericUpDownPrice.Location = new System.Drawing.Point(418, 196);
+            numericUpDownPrice.Location = new System.Drawing.Point(178, 133);
             numericUpDownPrice.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             numericUpDownPrice.Name = "numericUpDownPrice";
             numericUpDownPrice.Size = new System.Drawing.Size(120, 23);
             numericUpDownPrice.TabIndex = 9;
-            
             // 
             // AddTime
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(800, 450);
+            ClientSize = new System.Drawing.Size(367, 281);
             Controls.Add(numericUpDownPrice);
             Controls.Add(numericUpDownTime);
             Controls.Add(buttonCancel);
